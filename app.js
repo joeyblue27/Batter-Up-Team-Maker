@@ -1,3 +1,5 @@
+// Import files from path
+
 const Manager = require("./lib/Manager");
 const Engineer = require("./lib/Engineer");
 const Intern = require("./lib/Intern");
@@ -6,12 +8,18 @@ const render = require("./lib/htmlRenderer");
 const path = require("path");
 const fs = require("fs");
 
+// Path to create an html file in the dist folder
+
 const DIST_DIR = path.resolve(__dirname, 'dist');
 const distPath = path.join(DIST_DIR, 'team.html');
 
+// input user array
+
 const members = [];
 
-const questions = () => {
+// Function prompts questions according to the users choice of employee. 
+
+function questions () {
     console.log('Lets Build your team!');
     return inquirer.prompt([
         {
@@ -98,27 +106,34 @@ const questions = () => {
         },
     ])
 
+    // Assignes the employee info from the user input 
+
         .then((answer) => {
             var team;
 
             if (answer.position === 'Manager') {
-                team = new Manager(answer.teamName,
+                team = new Manager(
+                    answer.teamName,
                     answer.managerId,
                     answer.managerEmail,
                     answer.managerOffice);
 
             } else if (answer.position === 'Engineer') {
-                team = new Engineer(answer.engineerName,
+                team = new Engineer(
+                    answer.engineerName,
                     answer.engineerId,
                     answer.engineergithub,
                     answer.engineerEmail);
 
             } else if (answer.position === 'Intern') {
-                team = new Intern(answer.internName,
+                team = new Intern(
+                    answer.internName,
                     answer.internId,
-                    answer.internSchool,
-                    answer.internEmail);
+                    answer.internEmail,
+                    answer.internSchool);
             }
+
+            //adds to the team
 
             members.push(team);
             if (answer.anotherMember) {
@@ -128,6 +143,8 @@ const questions = () => {
             }
         })
 }
+
+// Html file is created when employee team is complete
 
 function writeFileAsync(copy, write) {
     return new Promise((createFile) => {
