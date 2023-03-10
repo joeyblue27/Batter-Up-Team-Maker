@@ -122,8 +122,8 @@ function questions () {
                 team = new Engineer(
                     answer.engineerName,
                     answer.engineerId,
-                    answer.engineergithub,
-                    answer.engineerEmail);
+                    answer.engineerEmail,
+                    answer.engineergithub);
 
             } else if (answer.position === 'Intern') {
                 team = new Intern(
