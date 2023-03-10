@@ -22,7 +22,7 @@ require node to run
 ## Tests
 npm test
 ## Video Walkthrough
-* Google Link: 
+* Google Link: https://drive.google.com/file/d/1Z0syixI2raHTc-ffWwxcvO2f4afbco8v/view
 ## Contacts
 * Email: Joeyblue27@gmail.com 
 * GitHub: https://github.com/joeyblue27/Tops-Team-Builder
