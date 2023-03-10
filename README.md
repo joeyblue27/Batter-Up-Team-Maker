@@ -1,6 +1,6 @@
 # Tops Team Builder
 
-![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)
+
 
 # Description
 Build an employee roster that will generate an html page with information about the team.
@@ -22,7 +22,8 @@ require node to run
 ## Tests
 npm test
 ## Video Walkthrough
-* Google Link: https://drive.google.com/file/d/1Z0syixI2raHTc-ffWwxcvO2f4afbco8v/view
+* Google Link: https://drive.google.com/file/d/1Z0syixI2raHTc-ffWwxcvO2f4afbco8v/view?usp=share_link
 ## Contacts
 * Email: Joeyblue27@gmail.com 
 * GitHub: https://github.com/joeyblue27/Tops-Team-Builder
+![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)
