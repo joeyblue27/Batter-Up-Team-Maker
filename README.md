@@ -26,5 +26,5 @@ npm test
 ## Contacts
 * Email: Joeyblue27@gmail.com 
 * GitHub: https://github.com/joeyblue27/Tops-Team-Builder
-* 
+
 ![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)
