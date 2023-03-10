@@ -21,7 +21,7 @@ This project is licensed under the MIT license.
 require node to run
 ## Tests
 npm test
-## Video Walkthrough
+## Walkthrough
 * Google Link: https://drive.google.com/file/d/1DOBU3wiHMZIAMDSeM7CrQDWWDJcRwGzq/view?usp=share_link
 ## Contacts
 * Email: Joeyblue27@gmail.com 
