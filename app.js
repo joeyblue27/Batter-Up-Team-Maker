@@ -20,88 +20,89 @@ const members = [];
 // Function prompts questions according to the users choice of employee. 
 
 function questions () {
-    console.log('Lets Build your team!');
+    console.log('Lets build a team!');
     return inquirer.prompt([
         {
             type: 'list',
-            question: "What is the employee's position?",
+            message: "What is the employee's position?",
             name: 'position',
             choices: ['Manager', 'Engineer', 'Intern'],
         },
         {
             type: 'input',
-            question: "What is the managers team name?",
+            message: "What is the team managers name?",
             name: 'teamName',
             when: (answers) => answers.position === 'Manager',
         },
         {
             type: 'input',
-            question: "What is the managers team id?",
+            message: "What is the managers team id?",
             name: 'managerId',
             when: (answer) => answer.position === 'Manager',
         },
         {
             type: 'input',
-            question: "What is the managers email?",
+            message: "What is the managers email?",
             name: 'managerEmail',
             when: (answer) => answer.position === 'Manager',
         },
         {
             type: 'input',
-            question: "What is the team managers office number?",
+            message: "What is the team managers office number?",
             name: 'managerOffice',
             when: (answer) => answer.position === 'Manager',
         },
         {
             type: 'input',
-            question: "What is the engineers name?",
+            message: "What is the engineers name?",
             name: 'engineerName',
             when: (answer) => answer.position === 'Engineer',
         },
         {
             type: 'input',
-            question: "What is the engineers id?",
+            message: "What is the engineers id?",
             name: 'engineerId',
             when: (answer) => answer.position === 'Engineer',
         },
         {
             type: 'input',
-            question: "What is the engineers email?",
+            message: "What is the engineers email?",
             name: 'engineerEmail',
             when: (answer) => answer.position === 'Engineer',
         },
         {
             type: 'input',
-            question: "What is the engineers Github?",
+            message: "What is the engineers Github?",
             name: 'engineergithub',
             when: (answer) => answer.position === 'Engineer',
         },
         {
             type: 'input',
-            question: "What is the interns name?",
+            message: "What is the interns name?",
             name: 'internName',
             when: (answer) => answer.position === 'Intern',
         },
         {
-            question: "What is the interns id?",
+            type: 'input',
+            message: "What is the interns id?",
             name: 'internId',
             when: (answer) => answer.position === 'Intern',
         },
         {
             type: 'input',
-            question: "What is the interns email?",
+            message: "What is the interns email?",
             name: 'internEmail',
             when: (answer) => answer.position === 'Intern',
         },
         {
             type: 'input',
-            question: "Where is the interns school?",
+            message: "Where is the interns school?",
             name: 'internSchool',
             when: (answer) => answer.position === 'Intern',
         },
         {
             type: 'confirm',
-            question: 'Add another member?',
+            message: 'Add another member?',
             name: 'anotherMember',
         },
     ])
