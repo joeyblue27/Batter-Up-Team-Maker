@@ -4,6 +4,9 @@
 
 # Description
 Build an employee roster that will generate an html page with information about the team.
+* Positions
+* Emails
+* Office ID's and location 
 ## Table of Contents 
 * [Installation](#installation)
 * [Usage](#usage)
