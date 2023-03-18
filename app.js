@@ -32,7 +32,7 @@ function questions () {
             type: 'input',
             message: "What is the team managers name?",
             name: 'teamName',
-            when: (answers) => answers.position === 'Manager',
+            when: (answer) => answer.position === 'Manager',
         },
         {
             type: 'input',
